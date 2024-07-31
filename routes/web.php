@@ -91,6 +91,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get("/settings", [SettingController::class, "settings"]);
 
     Route::get("/pay-receipt", [PaymentController::class, "generatePaymentReceipt"]); //record-types
+
+    //some new routes for development
     
 });
 
