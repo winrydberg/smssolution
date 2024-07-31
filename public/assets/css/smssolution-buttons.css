@@ -1,0 +1,35 @@
+.btn-dark {
+    color: #fff;
+    background-color: #08113b;
+    border-color: #08113b;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #405189;
+    border-color: #405189;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #f1536e;
+    border-color: #f1536e;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #00c689;
+    border-color: #00c689;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #3da5f4;
+    border-color: #3da5f4;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #fda006;
+    border-color: #fda006;
+}
