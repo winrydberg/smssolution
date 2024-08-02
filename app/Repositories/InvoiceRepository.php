@@ -20,9 +20,14 @@ class InvoiceRepository implements InvoiceRepositoryInterface
         return Invoice::where("invoice_no", $invoice_no)->with("student")->first();
     }
 
-    public function calcInvoiceAmt()
+    public function calcInvoiceAmt($invoice_no): float
     {
-        
+        $invoices = Invoice::where("invoice_no", $invoice_no)->get();
+        $amount = 0.0;
+        foreach($invoices as $inv){
+            $amount += $inv->amount;
+        }
+        return $amount;
     }
 
 }
